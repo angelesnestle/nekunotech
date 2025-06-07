@@ -11,12 +11,27 @@
   <header class="p-6 shadow-md bg-white sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <h1 class="text-2xl font-bold text-blue-800">NekunoTech</h1>
-      <nav class="space-x-4 text-sm text-gray-700 flex items-center">
+
+      <!-- Mobile toggle button -->
+      <button id="menu-toggle" class="md:hidden text-blue-800 focus:outline-none">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+      <!-- Nav Links -->
+      <nav id="menu" class="hidden md:flex space-x-4 text-sm text-gray-700 items-center">
         <a href="#" class="hover:text-blue-600">Home</a>
         <a href="#" class="hover:text-blue-600">About</a>
         <a href="#" class="hover:text-blue-600">Services</a>
         <a href="#" class="h-8 px-4 text-sm bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded hover:from-blue-900 hover:to-blue-700 flex items-center justify-center">Contact Us</a>
       </nav>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden mt-4 px-4 space-y-2">
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600">About</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Services</a>
+      <a href="#" class="block bg-gradient-to-r from-blue-800 to-blue-600 text-white text-center px-4 py-2 rounded hover:from-blue-900 hover:to-blue-700">Contact Us</a>
     </div>
   </header>
 
@@ -64,6 +79,15 @@
     </div>
   </footer>
 
-  <script>lucide.createIcons();</script>
+  <script>
+    lucide.createIcons();
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
