@@ -26,77 +26,140 @@
     data-logo="https://nekunotech.com/favicon-96x96.png">
   </script>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-blue-50 to-white text-gray-800">
-  <header class="p-6 shadow-md bg-white sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <img src="./NekunoTech-Banner.png" alt="NekunoTech Logo" width=200 />
+<body class="min-h-screen text-gray-900 bg-white">
+  <header class="p-6 bg-gradient-to-b from-blue-100 to-white sticky top-0 z-50 shadow-none border-none">
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center">
+      <img src="./NekunoTech-Banner-Transparent.png" alt="NekunoTech Logo" width=250 class="mb-4" />
 
       <!-- Mobile toggle button -->
-      <button id="menu-toggle" class="md:hidden text-blue-800 focus:outline-none">
+      <button id="menu-toggle" class="md:hidden text-blue-800 focus:outline-none mb-2">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
 
       <!-- Nav Links -->
-      <nav id="menu" class="hidden md:flex space-x-4 text-sm text-gray-700 items-center">
-        <a href="#" class="hover:text-blue-600">Home</a>
-        <a href="#" class="hover:text-blue-600">About</a>
-        <a href="#" class="hover:text-blue-600">Services</a>
-        <a href="mailto:inquiry@nekunotech.com" class="h-8 px-4 text-sm bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded hover:from-blue-900 hover:to-blue-700 flex items-center justify-center">Contact Us</a>
+      <nav id="menu" class="hidden md:flex space-x-8 text-sm text-gray-800 items-center justify-center mt-2">
+        <a href="#" id="nav-home" class="hover:text-blue-700 text-blue-900 font-bold border-b-2 border-blue-900">Home</a>
+        <a href="#features" id="nav-services" class="hover:text-blue-700 text-gray-800">Services</a>
+        <a href="#contact" id="nav-contact" class="h-8 px-4 text-sm bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded hover:from-blue-900 hover:to-blue-700 flex items-center justify-center">Contact Us</a>
+        <a href="#about" id="nav-about" class="hover:text-blue-700 text-gray-800">About</a>
       </nav>
     </div>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="md:hidden hidden mt-4 px-4 space-y-2">
-      <a href="#" class="block text-gray-700 hover:text-blue-600">Home</a>
-      <a href="#" class="block text-gray-700 hover:text-blue-600">About</a>
-      <a href="#" class="block text-gray-700 hover:text-blue-600">Services</a>
-      <a href="mailto:inquiry@nekunotech.com" class="block bg-gradient-to-r from-blue-800 to-blue-600 text-white text-center px-4 py-2 rounded hover:from-blue-900 hover:to-blue-700">Contact Us</a>
+    <div id="mobile-menu" class="md:hidden hidden mt-4 px-4 space-y-2 text-center">
+      <a href="#" id="mobile-nav-home" class="block text-blue-900 font-bold border-b-2 border-blue-900">Home</a>
+      <a href="#features" id="mobile-nav-services" class="block text-gray-800 hover:text-blue-700">Services</a>
+      <a href="#contact" id="mobile-nav-contact" class="block bg-gradient-to-r from-blue-800 to-blue-600 text-white text-center px-4 py-2 rounded hover:from-blue-900 hover:to-blue-700">Contact Us</a>
+      <a href="#about" id="mobile-nav-about" class="block text-gray-800 hover:text-blue-700">About</a>
     </div>
   </header>
 
-  <section class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h2 class="text-4xl md:text-5xl font-medium mb-6 text-blue-900">
-        Automation that Works for Your Business
-      </h2>
-      <p class="text-lg text-gray-600 mb-6">
-        AI and automation aren't the future—they're the now. Streamline your operations and refocus on what really moves your business forward.
-      </p>
-      <ul class="space-y-3 text-sm text-gray-700">
-        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-blue-600 mr-2"></i> Custom workflow automation</li>
-        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-blue-600 mr-2"></i> System integration & optimization</li>
-        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-blue-600 mr-2"></i> Business-first development solutions</li>
-        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-blue-600 mr-2"></i> Introductory offer: 32 free hours</li>
-        <li class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 text-blue-600 mr-2"></i> ₱400/hr during the first year (₱600/hr standard)</li>
-      </ul>
-      <a href="#" class="inline-flex items-center mt-6 px-5 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded hover:from-blue-900 hover:to-blue-700">
-        Claim Free 32 Hours <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
-      </a>
-    </div>
+  <main>
+    <section class="py-20 bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-medium mb-6 text-blue-900">Automation that Works for Your Business 🤖</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            AI and automation aren't the future—they're the now. Streamline your operations and refocus on what really moves your business forward.
+          </p>
+        </div>
 
-    <div class="bg-white border rounded-xl shadow p-6">
-      <h3 class="text-xl font-semibold mb-2 text-blue-800">Ready to Start?</h3>
-      <p class="text-gray-600 text-sm mb-4">
-        Get in touch to discuss your automation goals.
-      </p>
-      <a href="mailto:inquiry@nekunotech.com" class="inline-block mt-2 px-5 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded hover:from-blue-900 hover:to-blue-700">
-        Contact Us
-      </a>
-    </div>
-  </section>
+        <div class="bg-blue-50 rounded-2xl p-6 shadow-xl">
+          <h3 class="text-xl font-semibold mb-2 text-blue-800">Ready to Start? 🚀</h3>
+          <p class="text-gray-700 text-sm mb-4">
+            Get in touch to discuss your automation goals.
+          </p>
+          <a href="#contact" onclick="event.preventDefault(); scrollToSection('contact', 'nav-contact');" class="inline-block mt-2 px-5 py-2 bg-gradient-to-r from-blue-800 to-blue-600 text-white rounded hover:from-blue-900 hover:to-blue-700">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <section class="bg-blue-50 py-16">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h3 class="text-2xl font-semibold text-blue-800 mb-4">“We automate, so you can grow.”</h3>
-      <p class="text-gray-600">Join the growing businesses who are simplifying work through automation.</p>
-    </div>
-  </section>
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gradient-to-br from-white via-blue-100 to-blue-200 shadow-md">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-2 text-blue-900">Transform Your Business ✨</h2>
+        <p class="text-gray-700 max-w-2xl mx-auto">
+          Our comprehensive suite of AI-driven solutions helps businesses automate processes, increase efficiency, and focus on what matters most – growth.
+        </p>
+      </div>
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+        <div class="bg-white p-6 rounded-lg text-center">
+          <div class="text-blue-700 text-3xl mb-3">🤖</div>
+          <h3 class="font-semibold text-lg mb-2 text-blue-900">AI-Powered Automation</h3>
+          <p class="text-sm text-gray-800">Leverage cutting-edge AI to optimize business processes and reduce manual workload.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg text-center">
+          <div class="text-blue-700 text-3xl mb-3">⚙️</div>
+          <h3 class="font-semibold text-lg mb-2 text-blue-900">Workflow Optimization</h3>
+          <p class="text-sm text-gray-800">Streamline operations with intelligent engines that adapt to your business.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg text-center">
+          <div class="text-blue-700 text-3xl mb-3">🌐</div>
+          <h3 class="font-semibold text-lg mb-2 text-blue-900">Seamless Connectivity</h3>
+          <p class="text-sm text-gray-800">Integrate your tools and platforms for a unified, efficient digital ecosystem.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg text-center">
+          <div class="text-blue-700 text-3xl mb-3">🔐</div>
+          <h3 class="font-semibold text-lg mb-2 text-blue-900">Secure Integration</h3>
+          <p class="text-sm text-gray-800">Keep your data secure while automating workflows across platforms.</p>
+        </div>
+      </div>
+    </section>
 
-  <footer class="bg-white py-8 border-t mt-16">
-    <div class="max-w-7xl mx-auto px-6 text-center text-sm text-gray-500">
-      © <script>document.write(new Date().getFullYear())</script> NekunoTech. All rights reserved.
-    </div>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-blue-100 via-white to-blue-50 shadow-md">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4 text-blue-900">Ready to automate your business? 💡</h2>
+        <p class="text-gray-700 mb-8">Let’s discuss how NekunoTech can transform your business processes and drive growth.</p>
+
+        <form id="contact-form" action="https://formspree.io/f/xjkrqvyz" method="POST" class="bg-blue-50 p-6 rounded-xl text-left">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <input type="text" name="first-name" id="first-name" placeholder="First name" class="border border-gray-300 rounded-lg p-3 w-full text-gray-900" required>
+            <input type="text" name="last-name" id="last-name" placeholder="Last name" class="border border-gray-300 rounded-lg p-3 w-full text-gray-900" required>
+          </div>
+          <div class="mb-4">
+            <input type="email" name="email" id="email" placeholder="Email address" class="border border-gray-300 rounded-lg p-3 w-full text-gray-900" required>
+          </div>
+          <div class="mb-4">
+            <input type="text" name="company" id="company" placeholder="Company name" class="border border-gray-300 rounded-lg p-3 w-full text-gray-900">
+          </div>
+          <div class="mb-6">
+            <textarea rows="4" name="message" id="message" placeholder="Tell us about your automation needs..." class="border border-gray-300 rounded-lg p-3 w-full text-gray-900"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+            Send Message 🚀
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100 shadow-md">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4 text-blue-900">About NekunoTech 🧑‍💻</h2>
+        <p class="text-lg text-gray-800">
+          NekunoTech is an IT startup committed to harnessing the potential of artificial intelligence to transform workflows—making work smarter, not harder.
+        </p>
+        <hr class="my-6 border-blue-300 border-t-2 w-16 mx-auto">
+        <p class="text-lg text-gray-800">
+          Our innovative solutions streamline processes, ensuring that businesses operate more efficiently and effectively in today’s fast-paced environment.
+        </p>
+      </div>
+    </section>
+
+    <footer class="py-10 bg-white border-none shadow-none">
+      <div class="max-w-7xl mx-auto px-6 text-center text-sm text-gray-500">
+        <div class="mb-2">
+          <span class="block text-blue-800 font-semibold text-lg">“We automate, so you can grow.”</span>
+          <span class="block text-gray-700">Join the growing businesses who are simplifying work through automation.</span>
+        </div>
+        <div class="mt-6">
+          © <script>document.write(new Date().getFullYear())</script> NekunoTech. All rights reserved.
+        </div>
+      </div>
+    </footer>
 
   <script>
     lucide.createIcons();
@@ -106,6 +169,82 @@
 
     menuToggle.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+    });
+
+    // Navbar highlight logic
+    function setActiveNav(linkId) {
+      document.querySelectorAll('#menu a').forEach(a => {
+        a.classList.remove('text-blue-900', 'font-bold', 'border-b-2', 'border-blue-900');
+        a.classList.add('text-gray-800');
+      });
+      const link = document.getElementById(linkId);
+      if (link) {
+        link.classList.add('text-blue-900', 'font-bold', 'border-b-2', 'border-blue-900');
+        link.classList.remove('text-gray-800');
+      }
+    }
+
+    function scrollToSection(sectionId, navId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setActiveNav(navId);
+      }
+    }
+
+    document.getElementById('nav-about').addEventListener('click', function(e) {
+      e.preventDefault();
+      scrollToSection('about', 'nav-about');
+    });
+    document.getElementById('nav-services').addEventListener('click', function(e) {
+      e.preventDefault();
+      scrollToSection('features', 'nav-services');
+    });
+    document.getElementById('nav-contact').addEventListener('click', function(e) {
+      e.preventDefault();
+      scrollToSection('contact', 'nav-contact');
+    });
+    document.getElementById('nav-home').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setActiveNav('nav-home');
+    });
+
+    // Mobile nav
+    function setActiveMobileNav(linkId) {
+      document.querySelectorAll('#mobile-menu a').forEach(a => {
+        a.classList.remove('text-blue-900', 'font-bold', 'border-b-2', 'border-blue-900');
+        a.classList.add('text-gray-800');
+      });
+      const link = document.getElementById(linkId);
+      if (link) {
+        link.classList.add('text-blue-900', 'font-bold', 'border-b-2', 'border-blue-900');
+        link.classList.remove('text-gray-800');
+      }
+    }
+    document.getElementById('mobile-nav-about').addEventListener('click', function(e) {
+      e.preventDefault();
+      scrollToSection('about', 'mobile-nav-about');
+      setActiveMobileNav('mobile-nav-about');
+      mobileMenu.classList.add('hidden');
+    });
+    document.getElementById('mobile-nav-services').addEventListener('click', function(e) {
+      e.preventDefault();
+      scrollToSection('features', 'mobile-nav-services');
+      setActiveMobileNav('mobile-nav-services');
+      mobileMenu.classList.add('hidden');
+    });
+    document.getElementById('mobile-nav-contact').addEventListener('click', function(e) {
+      e.preventDefault();
+      scrollToSection('contact', 'mobile-nav-contact');
+      setActiveMobileNav('mobile-nav-contact');
+      mobileMenu.classList.add('hidden');
+    });
+    document.getElementById('mobile-nav-home').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setActiveMobileNav('mobile-nav-home');
+      mobileMenu.classList.add('hidden');
     });
   </script>
 </body>
