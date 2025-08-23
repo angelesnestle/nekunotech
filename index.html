@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NekunoTech</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -13,13 +14,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="NekunoTech" />
   <link rel="manifest" href="/site.webmanifest" />
-
-  <script async src="https://oy3nilacg3geqdrqyqlnikun.agents.do-ai.run/static/chatbot/widget.js"
-    data-agent-id="89bb2424-4aa9-11f0-bf8f-4e013e2ddde4" data-chatbot-id="WZP20iW6AOggbgB0Cm1tnsTGNcWLuwuc"
-    data-name="NekunoTech Chatbot" data-primary-color="#0048c7" data-secondary-color="#ffffff"
-    data-button-background-color="#0061EB" data-starting-message="Hello! How can I help you today?"
-    data-logo="https://nekunotech.com/favicon-96x96.png">
-    </script>
 </head>
 
 <body class="min-h-screen text-gray-900 bg-white">
@@ -177,6 +171,7 @@
           }, 100);
         }
       });
+      lucide.createIcons();
 
       // Navbar highlight logic
       function setActiveNav(linkId) {
